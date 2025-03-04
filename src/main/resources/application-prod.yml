@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    region: ap-northeast-2
+    register-with-eureka: false  # 자기 자신 등록 X
+    fetch-registry: false        # Eureka 서버가 다른 Eureka 서버로부터 서비스 목록을 가져오지 않도록
